@@ -3,27 +3,35 @@ const rollup = require("rollup");
 const path = require("path");
 const resolve = require("@rollup/plugin-node-resolve").default;
 const babel = require("@rollup/plugin-babel").default;
+const postcss = require("rollup-plugin-postcss");
 
 const currentWorkingPath = process.cwd();
-const { main, name } = require(path.join(currentWorkingPath, "package.json"));
+// Little refactor from where we get the code
+const { src, name } = require(path.join(currentWorkingPath, "package.json"));
 
-const inputPath = path.join(currentWorkingPath, main);
+// build input path using the src
+const inputPath = path.join(currentWorkingPath, src);
 
-// get pkg name without scope name
+// Little hack to just get the file name
 const fileName = name.replace("@cddev/", "");
 
+// see below for details on the options
 const inputOptions = {
   input: inputPath,
   external: ["react"],
   plugins: [
     resolve(),
+    postcss({
+      // Key configuration
+      modules: true,
+    }),
     babel({
       presets: ["@babel/preset-env", "@babel/preset-react"],
       babelHelpers: "bundled",
+      exclude: "node_modules/**",
     }),
   ],
 };
-
 const outputOptions = [
   {
     file: `dist/${fileName}.cjs.js`,
@@ -36,9 +44,11 @@ const outputOptions = [
 ];
 
 async function build() {
+  // create bundle
   const bundle = await rollup.rollup(inputOptions);
-  outputOptions.forEach(async (option) => {
-    await bundle.write(option);
+  // loop through the options and write individual bundles
+  outputOptions.forEach(async (options) => {
+    await bundle.write(options);
   });
 }
 

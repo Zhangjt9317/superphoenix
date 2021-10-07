@@ -1,5 +1,5 @@
 {
-  "name": "@cddev/phoenix-builder",
+  "name": "@ddev/phoenix-builder",
   "version": "0.0.0",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
@@ -35,6 +35,7 @@
     "@babel/preset-react": "^7.10.1",
     "@rollup/plugin-babel": "^5.0.3",
     "@rollup/plugin-node-resolve": "^8.0.1",
-    "rollup": "^2.15.0"
+    "rollup": "^2.15.0",
+    "rollup-plugin-postcss": "^4.0.1"
   }
 }

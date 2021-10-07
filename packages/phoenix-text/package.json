@@ -1,17 +1,20 @@
 {
-  "name": "@cddev/phoenix-text",
+  "name": "@ddev/phoenix-text",
   "version": "0.0.0",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "Jingtian Zhang <sam.zhang@desty.app>",
   "license": "ISC",
-  "main": "lib/phoenix-text.js",
+  "main": "dist/phoenix-text.cjs.js",
+  "module": "dist/phoenix-text.esm.js",
+  "src": "lib/phoenix-text.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "lib",
+    "dist"
   ],
   "publishConfig": {
     "access": "public"
@@ -20,7 +23,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "devDependencies": {
-    "@cddev/phoenix-builder": "^0.0.0",
+    "@ddev/phoenix-builder": "^0.0.0",
     "react": "^17.0.2"
   },
   "peerDependencies": {

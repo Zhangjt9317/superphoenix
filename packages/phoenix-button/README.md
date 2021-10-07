@@ -1,11 +1,11 @@
-# `@cddev/phoenix-button`
+# `@ddev/phoenix-button`
 
 > TODO: description
 
 ## Usage
 
 ```
-const phoenixButton = require('@cddev/phoenix-button');
+const phoenixButton = require('@ddev/phoenix-button');
 
 // TODO: DEMONSTRATE API
 ```
