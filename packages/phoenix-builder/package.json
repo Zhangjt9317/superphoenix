@@ -13,6 +13,10 @@
     "lib": "lib",
     "test": "__tests__"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zhangjt9317/superphoenix.git"
+  },
   "files": [
     "lib"
   ],
@@ -21,13 +25,6 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
-  },
-  "bugs": {
-    "url": "https://github.com/Zhangjt9317/superphoenix/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Zhangjt9317/superphoenix.git"
   },
   "dependencies": {
     "@babel/core": "^7.10.2",

@@ -12,6 +12,10 @@
     "lib": "lib",
     "test": "__tests__"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zhangjt9317/superphoenix.git"
+  },
   "files": [
     "lib",
     "dist"
