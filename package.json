@@ -7,19 +7,28 @@
     "build": "lerna run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy": "npm run build-storybook && gh-pages -d storybook-static"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zhangjt9317/superphoenix.git"
+  },
+  "bugs": {
+    "url": "git+https://github.com/Zhangjt9317/superphoenix/issues"
+  },
+  "homepage": "https://github.com/Zhangjt9317/superphoenix#readme",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.15.8",
+    "@babel/core": "^7.10.2",
     "@storybook/addon-actions": "^6.3.10",
-    "@storybook/addon-essentials": "^6.3.10",
     "@storybook/addon-links": "^6.3.10",
+    "@storybook/addons": "^6.3.10",
     "@storybook/react": "^6.3.10",
-    "babel-loader": "^8.2.2",
-    "lerna": "^4.0.0"
+    "babel-loader": "^8.1.0",
+    "lerna": "^3.22.0"
   },
   "dependencies": {}
 }

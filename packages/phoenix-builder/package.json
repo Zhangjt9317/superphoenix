@@ -22,12 +22,19 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
+  "bugs": {
+    "url": "https://github.com/Zhangjt9317/superphoenix/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zhangjt9317/superphoenix.git"
+  },
   "dependencies": {
-    "@babel/core": "^7.15.8",
-    "@babel/preset-env": "^7.15.8",
-    "@babel/preset-react": "^7.14.5",
-    "@rollup/plugin-babel": "^5.3.0",
-    "@rollup/plugin-node-resolve": "^13.0.5",
-    "rollup": "^2.58.0"
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@rollup/plugin-babel": "^5.0.3",
+    "@rollup/plugin-node-resolve": "^8.0.1",
+    "rollup": "^2.15.0"
   }
 }

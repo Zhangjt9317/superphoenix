@@ -4,4 +4,6 @@ import { Button } from "../lib/phoenix-button";
 
 export default { title: "Button" };
 
-export const primary = () => <Button>Hello Button</Button>;
+export const primary = () => {
+  return <Button>Hello Button</Button>;
+};
