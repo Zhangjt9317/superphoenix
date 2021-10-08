@@ -2,6 +2,6 @@
 
 const phoenixText = require("..");
 
-describe("@ddev/phoenix-text", () => {
+describe("@samddev/phoenix-text", () => {
   it("needs tests");
 });

@@ -1,5 +1,5 @@
 {
-  "name": "@ddev/phoenix",
+  "name": "@samddev/phoenix",
   "version": "3.0.0",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
@@ -27,11 +27,11 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@ddev/phoenix-button": "^3.0.0",
-    "@ddev/phoenix-text": "^3.0.0"
+    "@samddev/phoenix-button": "^3.0.0",
+    "@samddev/phoenix-text": "^3.0.0"
   },
   "devDependencies": {
-    "@ddev/phoenix-builder": "^3.0.0"
+    "@samddev/phoenix-builder": "^3.0.0"
   },
-  "gitHead": "52807b78f09c6e1eb79a979ef24839f5786de135"
+  "gitHead": "3864400eccd95423beffdaa896604423cb9983e6"
 }

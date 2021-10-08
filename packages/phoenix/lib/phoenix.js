@@ -1,4 +1,4 @@
 "use strict";
-import { Button } from "@ddev/phoenix-button";
-import { Text } from "@ddev/phoenix-text";
+import { Button } from "@samddev/phoenix-button";
+import { Text } from "@samddev/phoenix-text";
 export { Button, Text };
