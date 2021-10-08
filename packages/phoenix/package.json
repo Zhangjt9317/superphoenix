@@ -32,5 +32,6 @@
   },
   "devDependencies": {
     "@ddev/phoenix-builder": "^2.0.0"
-  }
+  },
+  "gitHead": "52807b78f09c6e1eb79a979ef24839f5786de135"
 }

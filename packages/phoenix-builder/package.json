@@ -34,5 +34,6 @@
     "@rollup/plugin-node-resolve": "^8.0.1",
     "rollup": "^2.15.0",
     "rollup-plugin-postcss": "^4.0.1"
-  }
+  },
+  "gitHead": "52807b78f09c6e1eb79a979ef24839f5786de135"
 }
